@@ -1,19 +1,16 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>reveal.js – The HTML Presentation Framework</title><meta name="description" content="sample slides"><meta name="author" content="Hakim El Hattab"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"><link rel="stylesheet" href="reveal/css/reveal.css"><link rel="stylesheet" href="reveal/css/theme/night.css" id="theme"><link rel="stylesheet" href="css/style.css"><!-- Code syntax highlighting -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>reveal.js – The HTML Presentation Framework</title><meta name="description" content="sample slides"><meta name="author" content="Hakim El Hattab"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"><link rel="stylesheet" href="reveal/css/reveal.css"><link rel="stylesheet" href="reveal/css/theme/serif.css" id="theme"><link rel="stylesheet" href="css/style.css"><!-- Code syntax highlighting -->
 <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
 <!-- Printing and PDF exports --><script>var link = document.createElement( 'link' );
 link.rel = 'stylesheet';
 link.type = 'text/css';
 link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
 document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script><!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section><h1>Sample Lecture</h1><p><div class="small">Created by LeoMao</div></p></section><section><section data-markdown><script type="text/template">## Outline
-- One
-- Two
-- Three
-</script></section><section data-markdown><script type="text/template">## Something More?
-- Four
-- Five
-- Six
-</script></section></section><section><section><h2>First of All</h2><p>$$\int f(x)\, dx$$</p></section></section></div></div><script src="js/jquery.js"></script><script src="reveal/lib/js/head.min.js"></script><script src="reveal/js/reveal.js"></script><script src="js/sketch.min.js"></script><script>// Full list of configuration options available at:
+</script><!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section><h1>Reinforcement Learning</h1><p><div class="small">leomao, bobogei81123, step5</div></p></section><section><section data-markdown><script type="text/template">## Outline
+- Games
+- Approaches
+- Results
+</script></section></section><section><section><h2>Games</h2></section><section><h3>CartPole</h3><ul><li>Observation: 4 維</li><li>Action Space: 2 個</li><li>Reward: </li></ul><div><a href="https://gym.openai.com/evaluations/eval_yambZMYNSwmTyi5Khv3lWg">OpenAI Evaluation
+</a></div></section><section><h3>Acrobot</h3><ul><li>Observation: 4 維</li><li>Action Space: 3 個</li><li>Reward: </li></ul></section><section><h3>躲(吃)子彈</h3><ul><li>Observation: $120 \times 60$ RGB pixels</li><li>Action Space: 2 個</li><li>Reward: 吃一個子彈得到 -1 (+1)</li></ul></section><section><h3>二維吃食物</h3><ul><li>Observation: $40 \times 40$ RGB pixels</li><li>Action Space: 4 個</li><li>Reward: 吃到一個食物 +1 / 撞一次牆 -1</li></ul></section><section><h3>簡易特訓 99</h3><ul><li>Observation: $100 \times 100$ RGB pixels $\times 4$ frames</li><li>Action Space: 5 個</li><li>Reward: 吃一個子彈得到 -1</li></ul></section></section><section><section><h2>Approaches</h2></section><section><h3>DQN</h3><ul><li>CartPole, Acrobot → 一般的 DQN</li><li>影像小遊戲 → CNN 版的 DQN</li></ul></section><section><h3>Important Observations</h3><ul></ul></section></section><section><section><h2>Results</h2></section><section></section></section><section><section><h2>Discussion & Qeustions</h2></section></section></div></div><script src="js/jquery.js"></script><script src="reveal/lib/js/head.min.js"></script><script src="reveal/js/reveal.js"></script><script src="js/sketch.min.js"></script><script>// Full list of configuration options available at:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
   controls: true,

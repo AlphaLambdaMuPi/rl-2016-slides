@@ -12,25 +12,26 @@ include ./mixin.pug
 
 block slides
   section
-    h1 Sample Lecture
+    h1 Reinforcement Learning
     p
-      .small Created by LeoMao
+      .small leomao, bobogei81123, step5
 
   section
     +mdslide.
       ## Outline
-      - One
-      - Two
-      - Three
+      - Games
+      - Approaches
+      - Results
 
-    +slide(data-markdown=true).
-      ## Something More?
-      - Four
-      - Five
-      - Six
+  section
+    include ./games.pug
+
+  section
+    include ./methods.pug
+
+  section
+    include ./results.pug
 
   section
     +slide
-      h2 First of All
-      p.
-        $$\int f(x)\, dx$$
+      h2 Discussion & Qeustions
